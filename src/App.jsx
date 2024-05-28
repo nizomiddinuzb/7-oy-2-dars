@@ -11,7 +11,7 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!inputRef.current.value.trim()) {
-      alert("Bo'shliq bo'sh qolgan")
+      alert("Qanaqa odamsiz e inputdi to'dirmesmi a ? 🤬😡")
       return
     }
     const newTodo = {
