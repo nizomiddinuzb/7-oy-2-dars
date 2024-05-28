@@ -1,41 +1,101 @@
-.big__div{
-    max-width: 400px;
-    margin: 0 auto;
-}
-.span{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.delete__button{
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .big__div {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .inputref {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+  
+  .submit__button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
     border: none;
-    border-radius: 6px;
-    width: 50px;
-    height: 20px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .submit__button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
     list-style: none;
-}
-li{
-    list-style: none;
+    padding: 0;
+  }
+  
+  li {
     display: flex;
     align-items: center;
-    text-align: center;
-    gap: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.submit__button{
-    width: 60px;
-    height: 30px;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  h4 {
+    margin: 0;
+    font-size: 1rem;
+    flex: 1;
+  }
+  
+  .done {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .done__button, .delete__button {
+    background: none;
     border: none;
-    border-radius: 5px;
-    background: black;
-    color: white;
     cursor: pointer;
-}
-.inputref{
-    height: 22px;
-    margin-left: 10px;
-    margin-right: 10px;
-    outline: none;
-    border: 2px solid rgb(37, 165, 207);
-    border-radius: 12px;
-    padding-left: 5px;
-}
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .done__button {
+    color: #28a745;
+  }
+  
+  .done__button:hover {
+    color: #218838;
+  }
+  
+  .delete__button {
+    color: #dc3545;
+  }
+  
+  .delete__button:hover {
+    color: #c82333;
+  }
+  .span{
+    margin-right: 20px;
+  }
